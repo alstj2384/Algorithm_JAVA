@@ -7,9 +7,8 @@ public class Main {
     private StringBuilder sb = new StringBuilder();
     private int[] arr;
     void dfs(int at, int chosen, String s){
-        if(at >= arr.length || chosen==6){
-            if(chosen == 6)
-                sb.append(s.strip()).append('\n');
+        if(chosen==6){
+            sb.append(s.strip()).append('\n');
             return;
         }
         for(int i = at; i < arr.length; i++){
