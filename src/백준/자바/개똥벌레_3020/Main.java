@@ -7,7 +7,7 @@ public class Main {
     private int[] up; // 종유석 담는 배열
     private int[] down; // 석순 담는 배열
     private int N, H;
-    private int upIdx, downIdx;
+    private int upIdx, downIdx; // 종유석과 석순의 선택 위치를 나타내는 변수
     private int min, min_count;
     public void solution() throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -19,6 +19,7 @@ public class Main {
         up = new int[N/2];
         down = new int[N/2];
 
+        // 입력받기
         for(int u = 0, d = 0, i = 1; i < N+1; i++){
             if(i % 2 == 0) {
                 up[u++] = (H-Integer.parseInt(br.readLine())+1);
@@ -26,6 +27,7 @@ public class Main {
             else down[d++] =  Integer.parseInt(br.readLine());
         }
 
+        // 정렬
         Arrays.sort(up);
         Arrays.sort(down);
 
