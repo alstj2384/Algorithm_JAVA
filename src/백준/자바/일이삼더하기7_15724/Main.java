@@ -20,6 +20,7 @@ public class Main {
 
         int k = Integer.parseInt(br.readLine());
 
+
         for(int i = 4; i < 1001; i++){
             for(int j  =1 ; j < 1001; j++){
                 d[i][j] = ((d[i-1][j-1] + d[i-2][j-1])%1000000009 + d[i-3][j-1]) % 1000000009;
