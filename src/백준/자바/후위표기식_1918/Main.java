@@ -1,4 +1,4 @@
-package 백준.후위표기식_1918;
+package 백준.자바.후위표기식_1918;
 
 import java.io.*;
 import java.util.*;
