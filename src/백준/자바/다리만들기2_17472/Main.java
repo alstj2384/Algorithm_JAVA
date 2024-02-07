@@ -150,7 +150,7 @@ public class Main {
             }
         });
 
-        // 크루스칼 알고리즘
+        // 크루스칼 알고리즘 수행
         for(int i = 0; i < edges.size(); i++){
             int start = edges.get(i).start;
             int end = edges.get(i).end;
