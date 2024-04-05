@@ -5,7 +5,8 @@ import java.util.*;
 
 public class Main {
     int n;
-    int[] arr, buffer = new int[6];
+    int[] arr;
+    int[] buffer = new int[6];
     StringBuilder sb = new StringBuilder();
     void dfs(int arrIdx, int bufferIdx){
         if(bufferIdx > 5){
