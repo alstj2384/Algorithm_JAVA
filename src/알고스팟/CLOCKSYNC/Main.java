@@ -84,7 +84,15 @@ public class Main {
             }
 
             dfs();
-            System.out.println(val);
+
+            boolean isValid = true;
+            for(int i = 0; i < 16; i++){
+                if(clocks[i] != 12 || availableSwitches[i] != 0){
+                    isValid = false;
+                }
+            }
+
+            System.out.println(isValid ? val : -1);
 
 
         }
