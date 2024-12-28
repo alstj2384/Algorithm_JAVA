@@ -1,4 +1,4 @@
-package 프로그래머스.자바.과자_나눠주기_16401;
+package 백준.자바.과자_나눠주기_16401;
 
 import java.io.BufferedReader;
 import java.io.IOException;
